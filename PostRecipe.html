@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Recipe</title>
+</head>
+<body>
+    <h2>Post Recipe</h2>
+    <form action="PostRecipe.php" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="picture">Upload Picture:</label>
+            <input type="file" id="picture" name="picture" accept="image/*" required>
+        </div>
+        <div>
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" name="recipeName" required>
+        </div>
+        <div>
+            <label for="country">Country of Origin:</label>
+            <input type="text" id="country" name="country" required>
+        </div>
+        <div>
+            <label for="cookingTime">Cooking Time:</label>
+            <input type="text" id="cookingTime" name="cookingTime" required>
+        </div>
+        <div>
+            <label for="ingredients">Ingredients:</label><br>
+            <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea>
+        </div>
+        <div>
+            <label for="instructions">Instructions:</label><br>
+            <textarea id="instructions" name="instructions" rows="8" cols="50" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

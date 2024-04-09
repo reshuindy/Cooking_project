@@ -1,0 +1,586 @@
+[
+  {
+    "country": "Afghanistan",
+    "dishes": [
+      "Kabuli Palaw",
+      "Mantu",
+      "Bolani"
+    ]
+  },
+  {
+    "country": "Albania",
+    "dishes": [
+      "Tavë Kosi",
+      "Fërgesë",
+      "Byrek"
+    ]
+  },
+  {
+    "country": "Algeria",
+    "dishes": [
+      "Couscous",
+      "Chakhchoukha",
+      "Dolma"
+    ]
+  },
+  {
+    "country": "Andorra",
+    "dishes": [
+      "Trinxat",
+      "Escudella",
+      "Xai Rostit"
+    ]
+  },
+  {
+    "country": "Angola",
+    "dishes": [
+      "Calulu de Pangolim",
+      "Kizaca",
+      "Muzongue"
+    ]
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "dishes": [
+      "Fungie and Pepperpot",
+      "Ducana",
+      "Seasoned Rice and Peas"
+    ]
+  },
+  {
+    "country": "Argentina",
+    "dishes": [
+      "Asado",
+      "Empanadas",
+      "Milanesas"
+    ]
+  },
+  {
+    "country": "Armenia",
+    "dishes": [
+      "Khash",
+      "Dolma",
+      "Khorovats"
+    ]
+  },
+  {
+    "country": "Australia",
+    "dishes": [
+      "Meat Pie",
+      "Pavlova",
+      "Lamingtons"
+    ]
+  },
+  {
+    "country": "Austria",
+    "dishes": [
+      "Wiener Schnitzel",
+      "Apfelstrudel",
+      "Tafelspitz"
+    ]
+  },
+  {
+    "country": "Azerbaijan",
+    "dishes": [
+      "Qutab",
+      "Dolma",
+      "Plov"
+    ]
+  },
+  {
+    "country": "Bahamas",
+    "dishes": [
+      "Conch Salad",
+      "Conch Fritters",
+      "Peas and Rice"
+    ]
+  },
+  {
+    "country": "Bahrain",
+    "dishes": [
+      "Machboos",
+      "Muhammar",
+      "Quwayzi"
+    ]
+  },
+  {
+    "country": "Bangladesh",
+    "dishes": [
+      "Biriyani",
+      "Ilish Mach",
+      "Borhani"
+    ]
+  },
+  {
+    "country": "Barbados",
+    "dishes": [
+      "Cou-Cou and Flying Fish",
+      "Pudding and Souse",
+      "Conkie"
+    ]
+  },
+  {
+    "country": "Belarus",
+    "dishes": [
+      "Draniki",
+      "Machanka",
+      "Kaldūny"
+    ]
+  },
+  {
+    "country": "Belgium",
+    "dishes": [
+      "Belgian Waffles",
+      "Moules-frites",
+      "Belgian Chocolate"
+    ]
+  },
+  {
+    "country": "Belize",
+    "dishes": [
+      "Chimole",
+      "Garnaches",
+      "Tamales"
+    ]
+  },
+  {
+    "country": "Benin",
+    "dishes": [
+      "Kékou",
+      "Akara",
+      "Yayou"
+    ]
+  },
+  {
+    "country": "Bhutan",
+    "dishes": [
+      "Ema Datshi",
+      "Jasha Maroo",
+      "Suja"
+    ]
+  },
+  {
+    "country": "Bolivia",
+    "dishes": [
+      "Salteñas",
+      "Tucumanas",
+      "Pique Macho"
+    ]
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "dishes": [
+      "Ćevapi",
+      "Burek",
+      "Begova Čorba"
+    ]
+  },
+  {
+    "country": "Botswana",
+    "dishes": [
+      "Seswaa",
+      "Phaletshe",
+      "Bogobe"
+    ]
+  },
+  {
+    "country": "Brazil",
+    "dishes": [
+      "Feijoada",
+      "Brigadeiros",
+      "Moqueca"
+    ]
+  },
+  {
+    "country": "Brunei",
+    "dishes": [
+      "Ambuyat",
+      "Nasi Katok",
+      "Kuah Pelecing"
+    ]
+  },
+  {
+    "country": "Bulgaria",
+    "dishes": [
+      "Banitsa",
+      "Shopska Salad",
+      "Moussaka"
+    ]
+  },
+  {
+    "country": "Burkina Faso",
+    "dishes": [
+      "Riz Gras",
+      "Tô",
+      "Bâtons de Manioc"
+    ]
+  },
+  {
+    "country": "Burundi",
+    "dishes": [
+      "Ibikungu",
+      "Igisaka",
+      "Isombe"
+    ]
+  },
+  {
+    "country": "Cabo Verde",
+    "dishes": [
+      "Cachupa",
+      "Laganha",
+      "Caldeirada de Peixe"
+    ]
+  },
+  {
+    "country": "Cambodia",
+    "dishes": [
+      "Amok Trey",
+      "Bai Sach Chrouk",
+      "Khmer Red Curry"
+    ]
+  },
+  {
+    "country": "Cameroon",
+    "dishes": [
+      "Ndolé",
+      "Brochettes",
+      "Poulet DG"
+    ]
+  },
+  {
+    "country": "Canada",
+    "dishes": [
+      "Poutine",
+      "Nanaimo Bars",
+      "Butter Tarts"
+    ]
+  },
+  {
+    "country": "Central African Republic",
+    "dishes": [
+      "Mango Sombe",
+      "Mango Ragout",
+      "Rale Mango"
+    ]
+  },
+  {
+    "country": "Chad",
+    "dishes": [
+      "Sossou",
+      "Aiysh al-Mulukhiya",
+      "Kawadja"
+    ]
+  },
+  {
+    "country": "Chile",
+    "dishes": [
+      "Pastel de Choclo",
+      "Empanadas",
+      "Curanto"
+    ]
+  },
+  {
+    "country": "China",
+    "dishes": [
+      "Peking Duck",
+      "Kung Pao Chicken",
+      "Dumplings"
+    ]
+  },
+  {
+    "country": "Colombia",
+    "dishes": [
+      "Bandeja Paisa",
+      "Ajiaco",
+      "Arepa de Huevo"
+    ]
+  },
+  {
+    "country": "Comoros",
+    "dishes": [
+      "Mataba",
+      "Gâteau Comorien",
+      "Ambrevade"
+    ]
+  },
+  {
+    "country": "Congo (Democratic Republic of the)",
+    "dishes": [
+      "Liboke",
+      "Mikokan",
+      "Chikwangue"
+    ]
+  },
+  {
+    "country": "Congo (Republic of the)",
+    "dishes": [
+      "Poulet Moambé",
+      "Makemba",
+      "Poisson Braisé"
+    ]
+  },
+  {
+    "country": "Costa Rica",
+    "dishes": [
+      "Gallo Pinto",
+      "Casado",
+      "Patacones"
+    ]
+  },
+  {
+    "country": "Croatia",
+    "dishes": [
+      "Crni Rižot",
+      "Strukli",
+      "Pag Cheese"
+    ]
+  },
+  {
+    "country": "Cuba",
+    "dishes": [
+      "Ropa Vieja",
+      "Moros y Cristianos",
+      "Cubano Sandwich"
+    ]
+  },
+  {
+    "country": "Cyprus",
+    "dishes": [
+      "Souvlaki",
+      "Halloumi",
+      "Kleftiko"
+    ]
+  },
+  {
+    "country": "Czech Republic",
+    "dishes": [
+      "Vepřo Knedlo Zelo",
+      "Smažený Sýr",
+      "Kulajda"
+    ]
+  },
+  {
+    "country": "Denmark",
+    "dishes": [
+      "Smørrebrød",
+      "Frikadeller",
+      "Rød Pølse"
+    ]
+  },
+  {
+    "country": "Djibouti",
+    "dishes": [
+      "Somali Banana Curry",
+      "Shukulati",
+      "Yogurt Khadra"
+    ]
+  },
+  {
+    "country": "Dominica",
+    "dishes": [
+      "Mountain Chicken",
+      "Callaloo Soup",
+      "Ducana"
+    ]
+  },
+  {
+    "country": "Dominican Republic",
+    "dishes": [
+      "La Bandera",
+      "Mangú",
+      "Chicharrón"
+    ]
+  },
+  {
+    "country": "Ecuador",
+    "dishes": [
+      "Encebollado",
+      "Llapingachos",
+      "Bolón de Verde"
+    ]
+  },
+  {
+    "country": "Egypt",
+    "dishes": [
+      "Kushari",
+      "Ful Medames",
+      "Molokhiya"
+    ]
+  },
+  {
+    "country": "El Salvador",
+    "dishes": [
+      "Pupusas",
+      "Yuca Frita",
+      "Panes Rellenos"
+    ]
+  },
+  {
+    "country": "Equatorial Guinea",
+    "dishes": [
+      "Peppersoup",
+      "Baka Soup",
+      "Tomate Rebombo"
+    ]
+  },
+  {
+    "country": "Eritrea",
+    "dishes": [
+      "Tselmi Dorho",
+      "Zigini with Injera",
+      "Ga'at"
+    ]
+  },
+  {
+    "country": "Estonia",
+    "dishes": [
+      "Verivorst",
+      "Kiluvõileib",
+      "Karask"
+    ]
+  },
+  {
+    "country": "Eswatini",
+    "dishes": [
+      "Sishwala",
+      "Sidvudvu",
+      "Umcombotsi"
+    ]
+  },
+  {
+    "country": "Ethiopia",
+    "dishes": [
+      "Doro Wat",
+      "Injera",
+      "Kitfo"
+    ]
+  },
+  {
+    "country": "Fiji",
+    "dishes": [
+      "Kokoda",
+      "Duruka",
+      "Lovo"
+    ]
+  },
+  {
+    "country": "Finland",
+    "dishes": [
+      "Karjalanpiirakka",
+      "Hernekeitto",
+      "Poronkäristys"
+    ]
+  },
+  {
+    "country": "France",
+    "dishes": [
+      "Croque Monsieur",
+      "Ratatouille",
+      "Coq au Vin"
+    ]
+  },
+  {
+    "country": "Gabon",
+    "dishes": [
+      "Poulet Nyembwe",
+      "Mitoumba",
+      "Poisson Bleu"
+    ]
+  },
+  {
+    "country": "Gambia",
+    "dishes": [
+      "Benachin",
+      "Domoda",
+      "Chérèh"
+    ]
+  },
+  {
+    "country": "Georgia",
+    "dishes": [
+      "Khachapuri",
+      "Khinkali",
+      "Lobio"
+    ]
+  },
+  {
+    "country": "Germany",
+    "dishes": [
+      "Currywurst",
+      "Spätzle",
+      "Schwarzwälder Kirschtorte"
+    ]
+  },
+  {
+    "country": "Ghana",
+    "dishes": [
+      "Kelewele",
+      "Red Red",
+      "Jollof Rice"
+    ]
+  },
+  {
+    "country": "Greece",
+    "dishes": [
+      "Moussaka",
+      "Souvlaki",
+      "Tzatziki"
+    ]
+  },
+  {
+    "country": "Grenada",
+    "dishes": [
+      "Oil Down",
+      "Cou-Cou",
+      "Ducana"
+    ]
+  },
+  {
+    "country": "Guatemala",
+    "dishes": [
+      "Pepian",
+      "Kak'ik",
+      "Chuchitos"
+    ]
+  },
+  {
+    "country": "Guinea",
+    "dishes": [
+      "Maffe",
+      "Foutou",
+      "Sauce Gombos"
+    ]
+  },
+  {
+    "country": "Guinea-Bissau",
+    "dishes": [
+      "Cabaz",
+      "Cachupa",
+      "Pagre"
+    ]
+  },
+  {
+    "country": "Guyana",
+    "dishes": [
+      "Pepperpot",
+      "Cook-Up Rice",
+      "Sada Roti"
+    ]
+  },
+  {
+    "country": "Haiti",
+    "dishes": [
+      "Griot",
+      "Diri ak Djon-Djon",
+      "Soup Joumou"
+    ]
+  },
+  {
+    "country": "India",
+    "dishes": [
+      "Samosa",
+      "Biryani",
+      "Tandoori Chicken"
+    ]
+  }
+]

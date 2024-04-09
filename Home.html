@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                    <a href="profile.php">Profile</a>
+                    <a href="favorite.php">Favorite Library</a>
+                    <a href="logout.php">Logout</a>
+                </div>
+            </div>
+            <div class="post-recipe">
+                <a href="post_recipe.php">Post a Recipe</a>
+            </div>
+            <div class="search-container">
+                <form action="/search" method="GET">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="recipes-section">
+        <h2>Trending Recipes</h2>
+        
+        <div class="trending-recipes">
+            
+            <div class="recipe">
+                <h3>Recipe Name</h3>
+                <p>Description</p>
+            </div>
+        </div>
+
+        <h2>Most Popular Recipes Globally</h2>
+        
+        <div class="popular-recipes">
+            
+            <div class="recipe">
+                <h3>Recipe Name</h3>
+                <p>Description</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

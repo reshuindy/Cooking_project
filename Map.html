@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>World Map with Top 3 Dishes</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .colorbar {
+            display: none !important; 
+        }
+    </style>
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 100%;"></div>
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const countryData = data.map(d => ({
+                    country: d.country,
+                    dishes: d.dishes,
+                    value: d.dishes.length 
+                }));
+
+                const plotlyData = [{
+                    type: 'choropleth',
+                    locationmode: 'country names',
+                    locations: countryData.map(d => d.country),
+                    z: countryData.map(d => d.value),
+                    text: countryData.map(d => `Country: ${d.country}<br>Top ${d.value} Dishes:<br>${d.dishes.join('<br>')}`),
+                    hoverinfo: 'text'
+                }];
+
+                const layout = {
+                    title: 'Top Dishes by Country',
+                    geo: {
+                        showframe: false,
+                        projection: { type: 'natural earth' }
+                        
+                    }
+                };
+
+                Plotly.newPlot('map', plotlyData, layout);
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html
+

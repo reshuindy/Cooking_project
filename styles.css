@@ -1,0 +1,145 @@
+/* Add your styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f2f2f2; 
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.topnav {
+    text-align: right;
+}
+
+.topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #333; 
+}
+
+.topnav a:hover {
+    background-color: #ddd; 
+    color: black; 
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        text-align: center;
+    }
+}
+
+
+.tooltip {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    pointer-events: none; 
+    z-index: 1; 
+}
+
+.search-container {
+    float: right;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+#map-section {
+    text-align: center;
+    padding: 20px;
+}
+
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+
+#recipes {
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.recipe-icon {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 23%; 
+    box-sizing: border-box; 
+}
+.recipe-icon img {
+    max-width: 30px;
+    margin-bottom: 10px; 
+}
