@@ -2,7 +2,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$database = "gudih_db";
+$database = "recipe";
 
 
 // Create connection

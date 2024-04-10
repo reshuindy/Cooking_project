@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userId = $_SESSION['user_id'];
 
     // File upload handling
-    $target_dir = "Uploads/";
+    $target_dir = "./uploads/";
     $target_file = $target_dir . basename($_FILES["picture"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -41,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($uploadOk == 0) {
         echo "Sorry, your file was not uploaded.";
     } else {
+        print_r($_FILES["picture"]["tmp_name"]);
         if (move_uploaded_file($_FILES["picture"]["tmp_name"], $target_file)) {
             $pictureUrl = $target_file;
 
