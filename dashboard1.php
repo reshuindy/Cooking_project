@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 
 // all recipes submitted by the user
 $user_id = $_SESSION['user_id'];
-$sql = "SELECT * FROM Recipes";
+$sql = "SELECT * FROM Recipes order by id desc";
 $result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
@@ -20,6 +20,12 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>.like-button{ display: inline-block; width: 100px; float: left; } .fav-button { display: inline-block; width: 60px; float: right; }</style>
 </head>
 <body>
     <header>
@@ -59,8 +65,35 @@ $result = $conn->query($sql);
                 echo "<p>Cooking Time: " . $row['cooking_time'] . "</p>";
                 echo "<p>Ingredients: " . $row['ingredients'] . "</p>";
                 echo "<p>Instructions: " . $row['instructions'] . "</p>";
-                echo "<img src='" . $row['picture_url'] . "' alt='Recipe Picture' style='max-width: 200px;'>";
-                echo "</div>";
+                echo "<img src='" . $row['picture_url'] . "' alt='Recipe Picture' style='max-width: 200px;'><br />";
+
+                $resultLike = $conn->query("SELECT * FROM recipe_fav_like WHERE recipe_id=".$row['id']." AND type='like'");
+                $likes = $resultLike->num_rows;
+                $likedAlready = false;
+                $isFavourite = false;
+                while ($rowLike = $resultLike->fetch_assoc()) {
+                    if($rowLike['user_id'] == $user_id) {
+                        $likedAlready = true;
+                        break;
+                    } ;
+                }
+                $resultFav = $conn->query("SELECT id FROM recipe_fav_like WHERE recipe_id=".$row['id']." AND type='fav' AND user_id=".$user_id);
+                $isFavourite = $resultFav->num_rows;
+                ?>
+                <!-- <input type="button" value="Like" id="like_<?php echo $row['id']; ?>" class="like" style="<?php if($likedAlready){ echo "color: #ffa449;"; } ?>" />&nbsp;(<span id="likes_<?php echo $row['id']; ?>"><?php echo $likes; ?></span>)&nbsp;
+                <input type="button" value="Fav" id="fav_<?php echo $row['id']; ?>" class="fav" style="<?php if($isFavourite){ echo "color: #ffa449;"; } ?>" />&nbsp;(<span id="fav_<?php echo $row['id']; ?>"><?php echo $isFavourite; ?></span>) -->
+                <?php if ($likedAlready) { ?> 
+                <a  href="socialaction.php?action=unlike&recipe_id=<?php echo $row['id'] ?>&user_id=<?php echo $user_id ?>" class="like-button"> <i class="bi bi-hand-thumbs-up-fill"></i> (<?php echo $likes; ?>) </a> 
+                <?php } ?>
+                <?php if (!$likedAlready) { ?> 
+                <a  href="socialaction.php?action=like&recipe_id=<?php echo $row['id'] ?>&user_id=<?php echo $user_id ?>" class="like-button"> <i class="bi bi-hand-thumbs-up"></i> (<?php echo $likes; ?>) </a>
+                <?php } ?>
+                
+                <?php if ($isFavourite) { ?><a  href="socialaction.php?action=unfav&recipe_id=<?php echo $row['id'] ?>&user_id=<?php echo $user_id ?>" class="fav-button"> <i class="bi bi-heart-fill"></i></a> <?php } ?>
+                <?php  if (!$isFavourite) { ?><a  href="socialaction.php?action=fav&recipe_id=<?php echo $row['id'] ?>&user_id=<?php echo $user_id ?>" class="fav-button"> <i class="bi bi-heart"></i></a> <?php } ?>
+
+                <?php
+                echo "<br/></div>";
             }
         } else {
             echo "No recipes submitted yet.";
