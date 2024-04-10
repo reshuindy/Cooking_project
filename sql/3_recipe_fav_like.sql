@@ -39,10 +39,6 @@ CREATE TABLE `recipe_fav_like` (
 -- Dumping data for table `recipe_fav_like`
 --
 
-INSERT INTO `recipe_fav_like` (`id`, `user_id`, `recipe_id`, `type`, `created_at`) VALUES
-(2, 1, 8, 'like', '2024-04-09 22:44:22'),
-(4, 1, 7, 'fav', '2024-04-09 22:46:59'),
-(11, 8, 8, 'fav', '2024-04-10 00:45:31');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +60,7 @@ ALTER TABLE `recipe_fav_like`
 -- AUTO_INCREMENT for table `recipe_fav_like`
 --
 ALTER TABLE `recipe_fav_like`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- Constraints for dumped tables
