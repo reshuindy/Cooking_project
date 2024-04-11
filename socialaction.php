@@ -21,6 +21,6 @@ if($action == 'unlike')
 $conn->query("DELETE from recipe_fav_like where `user_id` = $user_id AND `recipe_id` = $recipe_id AND `type`='like'");
 if($action == 'unfav')
 $conn->query("DELETE from recipe_fav_like where `user_id` = $user_id AND `recipe_id` = $recipe_id AND `type`='fav'");
-
-header("location: dashboard1.php");
+$redirectTo = isset($_SERVER['HTTP_REFERER'])? $_SERVER['HTTP_REFERER'] : 'dashboard1.php'  ;
+header("location: $redirectTo");
 exit;

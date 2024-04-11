@@ -11,6 +11,14 @@ if (!isset($_SESSION['user_id'])) {
 // all recipes submitted by the user
 $user_id = $_SESSION['user_id'];
 $sql = "SELECT * FROM Recipes order by id desc";
+$favoritePage = false;
+
+if(array_key_exists('my-favorite-recipe', $_GET)) {
+    $favoritePage = true;
+    // $conn->query("SELECT recipe_id FROM recipe_fav_like where recipe_fav_like.user_id=$user_id");
+    $sql = "SELECT Recipes.* FROM Recipes left join recipe_fav_like on recipes.id = recipe_fav_like.recipe_id 
+    where recipe_fav_like.user_id=$user_id and recipe_fav_like.type='fav' order by id desc";
+}
 $result = $conn->query($sql);
 ?>
 <!DOCTYPE html>
@@ -21,16 +29,13 @@ $result = $conn->query($sql);
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>.like-button{ display: inline-block; width: 100px; float: left; } .fav-button { display: inline-block; width: 60px; float: right; }</style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Recipe Sharing Website Logo">
+           <a href="dashboard1.php"> <img src="logo.png" alt="Recipe Sharing Website Logo"></a>
         </div>
         <div class="topnav">
             <div class="right-links">
@@ -38,7 +43,7 @@ $result = $conn->query($sql);
                     <button class="dropbtn">Profile<i class="fa fa-caret-down"></i></button>
                     <div class="dropdown-content">
                         <a href="my_recipes.php?user_id=<?php echo $_SESSION['user_id']; ?>">My Recipes</a>
-                        <a href="#">Favorites</a>
+                        <a href="dashboard1.php?my-favorite-recipe">Favorites</a>
                         <a href="logout.php">Logout</a>
                     </div>
                 </div>
@@ -96,6 +101,9 @@ $result = $conn->query($sql);
                 echo "<br/></div>";
             }
         } else {
+            if($favoritePage)
+            echo "<h4>No recipe marked as favorite.</h4> <a href='dashboard1.php'><i>&raquo; List of Recipes</i></a>";
+        else
             echo "No recipes submitted yet.";
         }
         ?>
